@@ -1,0 +1,37 @@
+{
+  "name": "cowlick.github.io",
+  "version": "1.0.0",
+  "description": "cowlick website",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "prepare": "lerna bootstrap",
+    "build": "lerna run build",
+    "start": "cd ./packages/site && yarn start",
+    "prettier": "prettier --write **/*.ts,js,vue}"
+  },
+  "devDependencies": {
+    "husky": "^1.2.1",
+    "lerna": "^3.8.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "prettier": {
+    "printWidth": 120,
+    "bracketSpacing": false
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:scenario && npm run build:src && npm run scan:assets",
+    "build:scenario": "cowlick-kag-compiler ./scenario/title.ks",
+    "build:scenario:prod": "cowlick-kag-compiler --plugin ./node_modules/.bin/cowlick-analyzer-plugin-script-encoder -- ./scenario/title.ks",
+    "build:src": "tsc -p .",
+    "start": "akashic-sandbox .",
+    "scan:assets": "akashic scan asset",
+    "bundle": "akashic export html -o ../../docs/static/demo -M -b"
+  },
+  "dependencies": {
+    "@cowlick/config": "^0.9.1",
+    "@cowlick/core": "^0.9.1",
+    "@cowlick/encoded-frame": "^0.9.1",
+    "@cowlick/engine": "^0.9.1"
+  },
+  "devDependencies": {
+    "@akashic/akashic-cli": "1.4.0",
+    "@akashic/akashic-engine": "2.4.8",
+    "@akashic/akashic-sandbox": "0.13.47",
+    "@cowlick/analyzer-plugin-script-encoder": "^0.9.0",
+    "@cowlick/kag-compiler": "^0.9.1",
+    "@types/node": "10.12.18",
+    "typescript": "3.2.2"
+  }
+}
