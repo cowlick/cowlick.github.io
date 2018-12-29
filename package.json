@@ -7,7 +7,9 @@
   "scripts": {
     "prepare": "lerna bootstrap",
     "build": "lerna run build",
-    "start": "cd ./packages/site && yarn start",
+    "generate": "npm run generate:site && npm run generate:demo",
+    "generate:site": "cd packages/site && npm run generate",
+    "generate:demo": "cd packages/demo && npm run bundle",
     "prettier": "prettier --write **/*.ts,js,vue}"
   },
   "devDependencies": {
