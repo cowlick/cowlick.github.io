@@ -6,6 +6,14 @@ export const state = () =>
       {
         title: "ホーム",
         link: "/"
+      },
+      {
+        title: "チュートリアル",
+        link: "/tutorial"
+      },
+      {
+        title: "アコ",
+        link: "/aco"
       }
     ]
   } as Router);

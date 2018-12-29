@@ -9,7 +9,7 @@
     "build:src": "tsc -p .",
     "start": "akashic-sandbox .",
     "scan:assets": "akashic scan asset",
-    "bundle": "akashic export html -o ../../docs/static/demo -M -b"
+    "bundle": "akashic export html -o ../../docs/static/tutorial/demo -M -b -f"
   },
   "dependencies": {
     "@cowlick/config": "^0.9.1",
