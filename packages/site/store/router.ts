@@ -12,8 +12,8 @@ export const state = () =>
         link: "/tutorial"
       },
       {
-        title: "アコ",
-        link: "/aco"
+        title: "その他",
+        link: "/other"
       }
     ]
   } as Router);

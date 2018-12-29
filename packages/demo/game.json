@@ -1,8 +1,8 @@
 {
 	"width": 640,
-	"height": 480,
+	"height": 360,
 	"fps": 30,
-	"main": "../script/main.js",
+	"main": "script/main.js",
 	"assets": {
 		"main": {
 			"type": "script",
