@@ -10,9 +10,11 @@
     "generate": "npm run generate:site && npm run generate:demo",
     "generate:site": "cd packages/site && npm run generate",
     "generate:demo": "cd packages/demo && npm run bundle",
+    "publish": "gh-pages -d ./docs -m \"Update $(date +%Y-%m-%d:%H:%M:%s)\" -b master",
     "prettier": "prettier --write **/*.ts,js,vue}"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "husky": "^1.2.1",
     "lerna": "^3.8.0",
     "lint-staged": "^8.1.0",
