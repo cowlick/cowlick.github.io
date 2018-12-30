@@ -14,6 +14,12 @@
 <script lang="ts">
 import {Component, Vue} from "nuxt-property-decorator";
 
-@Component
+@Component({
+  head() {
+    return {
+      title: "プロフィール"
+    };
+  }
+})
 export default class extends Vue {}
 </script>

@@ -24,7 +24,13 @@ import {Component, Vue} from "nuxt-property-decorator";
 import {State} from "vuex-class";
 import Tutorial from "~/model/Tutorial";
 
-@Component
+@Component({
+  head() {
+    return {
+      title: "チュートリアル"
+    };
+  }
+})
 export default class extends Vue {
   @State
   tutorial: Tutorial;
