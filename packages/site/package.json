@@ -1,7 +1,7 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "website",
+  "description": "JavaScriptで動作するノベルゲームエンジンです",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
