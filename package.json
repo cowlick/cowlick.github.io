@@ -10,7 +10,7 @@
     "generate": "npm run generate:site && npm run generate:demo",
     "generate:site": "cd packages/site && npm run generate",
     "generate:demo": "cd packages/demo && npm run bundle",
-    "publish": "gh-pages -d ./docs -m \"Update $(date +%Y-%m-%d:%H:%M:%s)\" -b master",
+    "publish": "gh-pages -d ./docs -m \"Update $(date +%Y-%m-%d:%H:%M:%s)\" -b master -t",
     "prettier": "prettier --write **/*.ts,js,vue}"
   },
   "devDependencies": {
