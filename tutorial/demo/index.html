@@ -30,7 +30,7 @@ if (! ("gLocalAssetContainer" in window)) {
 				window.gLocalAssetContainer["main"] = function(g) {
 			!function(e,i,n,o,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var l=i("@cowlick/engine");n.exports=function(){var e=l.initialize(g.game);e.load("title",function(e){})}}(g.module.exports,g.module.require,g.module,g.filename,g.dirname);		};
 				window.gLocalAssetContainer["scene0"] = function(g) {
-			!function(e,l,r,a,m){var n=l("@cowlick/core");r.exports=new n.Scene({label:"scene0",frames:[new n.Frame([{tag:"jump",label:"title"}])]})}(g.module.exports,g.module.require,g.module,g.filename,g.dirname);		};
+			!function(e,a,l,m,i){var r=a("@cowlick/core");l.exports=new r.Scene({label:"scene0",frames:[new r.Frame([{tag:"layer",name:"message",visible:!1},{tag:"layer",name:"system",visible:!1},{tag:"choice",layer:{name:"choice"},values:[{tag:"jump",label:"title",text:"おわる"}]}])]})}(g.module.exports,g.module.require,g.module,g.filename,g.dirname);		};
 				window.gLocalAssetContainer["title"] = function(g) {
 			!function(e,a,l,m,i){var r=a("@cowlick/core");l.exports=new r.Scene({label:"title",frames:[new r.Frame([{tag:"layer",name:"message",visible:!1},{tag:"layer",name:"system",visible:!1},{tag:"choice",layer:{name:"choice"},values:[{tag:"jump",label:"scene0",text:"はじめる"}]}])]})}(g.module.exports,g.module.require,g.module,g.filename,g.dirname);		};
 				window.gLocalAssetContainer["node_modules/@akashic-extension/akashic-label/lib/DefaultRubyParser.js"] = function(g) {
