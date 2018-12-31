@@ -9,7 +9,7 @@
       <v-btn slot="activator" color="primary" dark @click="$store.commit('tutorial/open')"> デモをみる </v-btn>
       <v-card>
         <v-card-title> <span class="headline">チュートリアル デモ</span> </v-card-title>
-        <iframe src="/tutorial/demo" width="100%" style="height: 360px;"></iframe>
+        <iframe src="/tutorial/demo/index.html" width="100%" style="height: 360px;"></iframe>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="primary" flat="flat" @click="$store.commit('tutorial/close')">閉じる</v-btn>
