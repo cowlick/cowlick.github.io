@@ -10,7 +10,7 @@
     <v-menu class="hidden-md-and-up">
       <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
       <v-list>
-        <v-list-tile v-for="route in router.routes" :key="route.title">
+        <v-list-tile v-for="route in router.routes" :key="route.title" @click="$router.push(route.link)">
           <v-list-tile-content>
             <v-list-tile-title>{{ route.title }}</v-list-tile-title>
           </v-list-tile-content>
