@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npm run build:scenario && npm run build:src && npm run scan:assets",
-    "build:scenario": "cowlick-kag-compiler ./scenario/title.ks",
+    "build:scenario": "cowlick-kag-compiler ./scenario/title.ks && cowlick-kag-compiler ./scenario/scene0.ks -o ./script",
     "build:scenario:prod": "cowlick-kag-compiler --plugin ./node_modules/.bin/cowlick-analyzer-plugin-script-encoder -- ./scenario/title.ks",
     "build:src": "tsc -p .",
     "start": "akashic-sandbox .",
