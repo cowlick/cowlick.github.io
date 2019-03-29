@@ -1,6 +1,6 @@
 const pkg = require("./package");
 
-module.exports = {
+export default {
   mode: "universal",
 
   /*
@@ -41,17 +41,12 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["~/modules/typescript.js"],
+  modules: [],
 
   /*
    ** Build configuration
    */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
-  },
+  build: {},
   generate: {
     dir: "../../docs"
   }

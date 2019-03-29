@@ -33,6 +33,6 @@ import Tutorial from "~/model/Tutorial";
 })
 export default class extends Vue {
   @State
-  tutorial: Tutorial;
+  tutorial!: Tutorial;
 }
 </script>

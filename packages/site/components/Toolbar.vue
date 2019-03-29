@@ -27,6 +27,6 @@ import {Router} from "~/model/Router";
 @Component
 export default class extends Vue {
   @State
-  router: Router;
+  router!: Router;
 }
 </script>

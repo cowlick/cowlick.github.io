@@ -2,7 +2,11 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "target": "es5",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom",
+      "dom"
+    ],
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
@@ -12,12 +16,24 @@
     "strict": true,
     "declaration": false,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "allowJs": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"]
-    }
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/vue-app"
+    ],
+    "module": "esnext"
   }
 }
-
