@@ -5,5 +5,5 @@ cowlickのウェブサイト
 ## How to Build
 
 ```bash
-yarn build
+npm run build
 ```
