@@ -12,18 +12,18 @@
     "bundle": "akashic export html -o ../../docs/tutorial/demo -M -b -f"
   },
   "dependencies": {
-    "@cowlick/config": "^0.9.1",
-    "@cowlick/core": "^0.9.1",
-    "@cowlick/encoded-frame": "^0.9.1",
-    "@cowlick/engine": "^0.9.1"
+    "@cowlick/config": "^0.12.0",
+    "@cowlick/core": "^0.11.0",
+    "@cowlick/encoded-frame": "^0.11.0",
+    "@cowlick/engine": "^0.13.0"
   },
   "devDependencies": {
-    "@akashic/akashic-cli": "1.5.28",
+    "@akashic/akashic-cli": "1.6.1",
     "@akashic/akashic-engine": "2.4.14",
-    "@akashic/akashic-sandbox": "0.13.61",
-    "@cowlick/analyzer-plugin-script-encoder": "^0.9.0",
-    "@cowlick/kag-compiler": "^0.9.1",
+    "@akashic/akashic-sandbox": "0.13.63",
+    "@cowlick/analyzer-plugin-script-encoder": "^0.11.0",
+    "@cowlick/kag-compiler": "^0.12.0",
     "@types/node": "10.12.18",
-    "typescript": "3.4.5"
+    "typescript": "3.5.1"
   }
 }

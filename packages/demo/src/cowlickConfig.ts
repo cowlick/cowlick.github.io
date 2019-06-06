@@ -27,7 +27,8 @@ const config: Config = {
       },
       marker: []
     },
-    system: []
+    system: [],
+    priority: [["message", 0], ["choice", 1], ["system", 2]]
   },
   font: {
     list: [

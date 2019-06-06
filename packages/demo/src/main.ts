@@ -4,8 +4,8 @@ import * as novel from "@cowlick/engine";
 import {AssetCollector} from "./AssetCollector";
 
 module.exports = () => {
-  novel.Engine.assetCollector = new AssetCollector();
   const engine = novel.initialize(g.game);
+  engine.assetCollector = new AssetCollector();
   addScripts(engine);
   engine.load("title", (c: novel.SceneController) => {});
 };
@@ -117,7 +117,7 @@ export const createLink = (controller: novel.SceneController, link: core.Link) =
   const button = new novel.LabelButton(params);
   button.move(link.layer.x, link.layer.y);
   for (const script of link.scripts) {
-    button.onClick.add(() => {
+    button.click.add(() => {
       novel.Engine.scriptManager.call(controller, script);
     });
   }
